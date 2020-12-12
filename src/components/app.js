@@ -1,7 +1,9 @@
 /* eslint-disable arrow-body-style */
+import PersonInformation from './personinformation';
+
 const App = () => {
   return (
-    <h1>Hello world</h1>
+    <PersonInformation />
   );
 };
 

@@ -1,0 +1,65 @@
+@import url("./general.css");
+
+.Container {
+  margin: 5%;
+}
+
+.Little {
+  font-size: 1.5vh;
+}
+
+.Text {
+  margin-top: 2%;
+  font-size: 2vh;
+}
+
+.Voting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  padding: 3vh;
+  background-color: black;
+}
+
+.VoteItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vh;
+  height: 5vh;
+  width: 5vh;
+  color: white;
+}
+
+.VoteItem > * {
+  pointer-events: none;
+}
+
+.Good {
+  background-color: var(--color1); 
+}
+
+.Bad {
+  background-color: var(--color2);
+  transform: scaleX(-1);
+
+}
+
+.Button {
+  width: 50%;
+  background: none;
+  border: 0.3vh solid white;
+  font-size: 2vh;
+  outline: none;
+  cursor: pointer;
+}
+
+.Button:hover {
+  background-color: white;
+  color: black;
+}
+
+.Selected {
+  border: 3px solid white;
+}
