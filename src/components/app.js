@@ -1,9 +1,9 @@
 /* eslint-disable arrow-body-style */
-import PersonInformation from './personinformation';
+import PersonDisplay from './persondisplay';
 
 const App = () => {
   return (
-    <PersonInformation />
+    <PersonDisplay person="kanye" />
   );
 };
 

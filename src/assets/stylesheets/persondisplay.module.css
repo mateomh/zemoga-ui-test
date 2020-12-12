@@ -1,0 +1,14 @@
+@import url("./general.css");
+
+.Container {
+  background-color: palevioletred;
+  padding: 30vh 5vh 3vh 3vh;
+}
+
+.Kanye {
+  background-image: linear-gradient( rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7) 90% 95%), url('../images/kanye1.jpg');
+  background-repeat: no-repeat;
+  background-size: contain 100%;
+  background-position-x: 70%;
+  background-position-y: 50%;
+}
