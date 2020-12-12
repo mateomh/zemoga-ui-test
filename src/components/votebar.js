@@ -8,10 +8,11 @@ import BarStyles from '../assets/stylesheets/votebar.module.css';
 const VoteBar = props => {
   const { goodVotes, badVotes } = props;
   const totalVotes = goodVotes + badVotes;
-  const width = Math.round((goodVotes / totalVotes) * 100);
+  const good = Math.round((goodVotes / totalVotes) * 100);
+  const bad = 100 - good;
 
   const goodStyle = {
-    width: `${width}%`,
+    width: `${good}%`,
     backgroundColor: '#00C19F',
     height: '100%',
     textAlign: 'left',
@@ -22,11 +23,11 @@ const VoteBar = props => {
   return (
     <div className={BarStyles.Bar}>
       <div style={goodStyle}>
-        <span className={BarStyles.Text}>{`${width}%`}</span>
+        <span className={BarStyles.Text}>{`${good}%`}</span>
         <FontAwesomeIcon icon={faThumbsUp} />
       </div>
       <span className={BarStyles.Bad}>
-        50%
+        {`${bad}%`}
         <FontAwesomeIcon icon={faThumbsDown} flip="horizontal" className={BarStyles.Text} />
       </span>
     </div>
