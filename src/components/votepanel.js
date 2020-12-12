@@ -34,7 +34,9 @@ const VotePanel = () => {
   };
 
   const submitVote = () => {
-    if (vote.vote !== null) {
+    if (vote.voted === true) {
+      setVote({ ...defaultVote });
+    } else if (vote.vote !== null) {
       setVote({ ...vote, voted: true });
     }
   };

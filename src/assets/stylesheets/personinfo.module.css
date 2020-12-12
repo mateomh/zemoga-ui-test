@@ -14,10 +14,10 @@
 }
 
 .Voting {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
   align-items: center;
-  width: 70%;
   padding: 3vh;
   background-color: black;
 }
@@ -26,6 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   padding: 1vh;
   height: 5vh;
   width: 5vh;
@@ -47,12 +48,14 @@
 }
 
 .Button {
-  width: 50%;
+  width: 60%;
+  grid-column: 1 / 3;
   background: none;
   border: 0.3vh solid white;
   font-size: 2vh;
   outline: none;
   cursor: pointer;
+  margin-top: 2vh;
 }
 
 .Button:hover {
@@ -62,4 +65,19 @@
 
 .Selected {
   border: 3px solid white;
+}
+
+/* =============== MEDIA QUERIES ==================== */ 
+
+@media (min-width: 1000px) {
+  .Voting {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+  }
+
+  .Button {
+    width: 50%;
+    margin: 0;
+  }
 }
