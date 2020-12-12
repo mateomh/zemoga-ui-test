@@ -10,7 +10,7 @@
 }
 
 .Text {
-  margin-top: 2%;
+  margin-top: 5%;
   font-size: 2vh;
 }
 
@@ -70,6 +70,9 @@
 /* =============== MEDIA QUERIES ==================== */ 
 
 @media (min-width: 1000px) {
+  .Text {
+    margin-top: 2%;
+  }
   .Voting {
     display: flex;
     justify-content: space-between;

@@ -9,11 +9,13 @@ const PersonDisplay = props => {
   const { person } = props;
   let style = `${PersonDispStyles.Container}`;
   let personName;
+  let section;
 
   switch (person) {
     case 'kanye':
       style = style.concat(` ${PersonDispStyles.Kanye}`);
       personName = 'Kanye West';
+      section = 'Entertainment';
       break;
     default:
       break;
@@ -21,7 +23,7 @@ const PersonDisplay = props => {
 
   return (
     <div className={style}>
-      <PersonInformation name={personName} />
+      <PersonInformation name={personName} section={section} />
     </div>
   );
 };
