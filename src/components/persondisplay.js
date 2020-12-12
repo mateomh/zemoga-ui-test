@@ -4,6 +4,7 @@
 import PropTypes from 'prop-types';
 import PersonDispStyles from '../assets/stylesheets/persondisplay.module.css';
 import PersonInformation from './personinformation';
+import VoteBar from './votebar';
 
 const PersonDisplay = props => {
   const { person } = props;
@@ -24,6 +25,7 @@ const PersonDisplay = props => {
   return (
     <div className={style}>
       <PersonInformation name={personName} section={section} />
+      <VoteBar goodVotes={1} badVotes={2} />
     </div>
   );
 };
