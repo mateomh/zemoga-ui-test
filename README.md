@@ -4,7 +4,7 @@
 
 > This project is a clone of a provided page in the specifications for the test.
 
-![screenshot](./src/assets/images/screenshot.png)
+![screenshot](./src/assets/images/screenshot.jpg)
 
 This is a UI test made for Zemoga as part of the candidate process. The objective was to clone the visuals of the provided screen shot and give the site functionality using JS. The framework chosen to build the site was ReactJS. The publicity sections were not added to the clone due to not being part of the functionality of the site and all the efforts went to make the main components of the page look as close as the original.
 
