@@ -1,28 +1,31 @@
+/* eslint-disable prefer-const */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/interactive-supports-focus */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import PropTypes from 'prop-types';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import PersonInfoStyles from '../assets/stylesheets/personinfo.module.css';
 import VotePanel from './votepanel';
 import VoteBar from './votebar';
+import * as Storage from '../modules/storage';
 
 const PersonInformation = props => {
   const { name, section } = props;
 
-  const totalVotes = {
-    goodVotes: 1,
-    badVotes: 1,
-  };
+  const initialVotes = Storage.getVotes(name);
 
-  const [votes, setVotes] = useState(totalVotes);
+  const [totalVotes, setVotes] = useState(initialVotes);
+
+  useEffect(() => {
+    Storage.saveVotes(name, totalVotes);
+  }, [totalVotes]);
 
   const goodVotes = () => {
-    setVotes({ ...votes, goodVotes: votes.goodVotes + 1 });
+    setVotes({ ...totalVotes, goodVotes: totalVotes.goodVotes + 1 });
   };
 
   const badVotes = () => {
-    setVotes({ ...votes, badVotes: votes.badVotes + 1 });
+    setVotes({ ...totalVotes, badVotes: totalVotes.badVotes + 1 });
   };
 
   return (
@@ -39,7 +42,7 @@ const PersonInformation = props => {
         Mauris ultricies eget nisi id iaculis.
       </p>
       <VotePanel good={goodVotes} bad={badVotes} />
-      <VoteBar goodVotes={votes.goodVotes} badVotes={votes.badVotes} />
+      <VoteBar goodVotes={totalVotes.goodVotes} badVotes={totalVotes.badVotes} />
     </div>
   );
 };
