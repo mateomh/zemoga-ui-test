@@ -1,0 +1,75 @@
+@import url("./general.css");
+
+.Container {
+  position: relative;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.1) 40% 100%),
+    url('../images/pope1.jpg');
+  height: 70vh;
+  padding-top: 7vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 30%;
+  background-position-x: 80%;
+}
+
+.Info {
+  position: relative;
+  height: 40vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
+  color: white;
+  padding: 2vh;
+}
+
+.Title {
+  font-size: 5vh;
+}
+
+.Text {
+  margin-top: 5vh;
+  font-size: 2.5vh;
+}
+
+.Good {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color1);
+  width: 50%;
+  height: 20%;
+  font-size: 5vh;
+}
+
+.Bad {
+  display: inline-flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color2);
+  width: 50%;
+  height: 20%;
+  font-size: 5vh;
+}
+
+/* =================== MEDIA QUERIES ================== */
+@media (min-width: 768px) {
+  .Info {
+    position: absolute;
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 10%;
+    top: 18vh;
+    width: 40vw;
+    z-index: 100;
+  }
+
+  .Text {
+    margin-top: 3vh;
+  }
+}

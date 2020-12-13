@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Rule of Thumb 
 
-## Available Scripts
+> This project is a clone of a provided page in the specifications for the test.
 
-In the project directory, you can run:
+![screenshot](./src/assets/images/screenshot.jpg)
 
-### `yarn start`
+This is a UI test made for Zemoga as part of the candidate process. The objective was to clone the visuals of the provided screen shot and give the site functionality using JS. The framework chosen to build the site was ReactJS. The publicity sections were not added to the clone due to not being part of the functionality of the site and all the efforts went to make the main components of the page look as close as the original.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Built With
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- ReactJS,
+- Jest,
 
-### `yarn test`
+## Live Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Test Result Link](https://zemoga-test-mm.netlify.app/)
 
-### `yarn build`
+# How to use it
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Just click on the [Live link](https://zemoga-test-mm.netlify.app/) and start testing the application or you can also choose to set it up locally following the next instructions.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setup Locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the application locally you will need to follow several steps to make it work.
 
-### `yarn eject`
+First, you have to check if you have **nodejs** installed on your machine. For this type the following command in your terminal:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+> node -v
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If **command not found** shows as a response, then go to [nodejs.org](https://nodejs.org/en/) and follow the instructions to install it. After completing the installation the same command should show you a version number.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Then clone the [repository](https://github.com/mateomh/zemoga-ui-test.git) into your local drive and open a terminal in the root folder of the project and install the necessary packages to make it work by running this command:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+> npm install
 
-## Learn More
+This will get the project ready to run. After this run the following command to start the development server on **localhost:3000/** and wait for the browser to open:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+If the browser does not open or you close it by accident, but the server is still running you can type **localhost:3000/** in your address bar to get into the application again.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Tests
 
-### Analyzing the Bundle Size
+This project has a suite of tests built-in.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To run the tests clone the [repository](https://github.com/mateomh/Pokedex-React.git) into your local drive, if you haven't done so, and open a terminal in the root folder of the project and install the necessary packages to make it work by running this command:
 
-### Making a Progressive Web App
+> npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Then you can just run the following command and see the results
 
-### Advanced Configuration
+> npm test
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+👤 **Mateo mojica**
 
-### `yarn build` fails to minify
+- Github: [@mateomh](https://github.com/mateomh)
+- Twitter: [@mateo_m_h](https://twitter.com/mateo_m_h)
+- Linkedin: [Mateo mojica](https://linkedin.com/mateo_mojica_hernandez)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse
+- Zemoga
+
+## 📝 License
+
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
+
+## Credits
+
+Credits to all the following people for the photos used in the page:
+
+Pope Francis Photo by <a href="https://www.pbs.org/wgbh/frontline/article/pope-francis-in-his-own-words/">PBS</a>
+
+Kanye West Photo by <a href="https://www.vanityfair.com/people/kanye-west">Vanity Fair</a>
+
+Mark Zuckerberg Photo by <a href="https://realestatemarket.com.mx/influencers/mark-zuckerberg">Real State Market & Lifestyle</a>
+
+Cristina Fernandez de Kirchner Photo by <a href="https://cnnespanol.cnn.com/2018/03/06/cristina-fernandez-kirchner-amia-causas-los-sauces-hotesur-peores-momentos/">CNN en español</a>
+
+Malala Yousafzai Photo by <a href="https://entaconadas.co/malala-yousafzai-joven-con-proposito/">Entaconadas</a>
