@@ -1,0 +1,45 @@
+@import url("./general.css");
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  margin: 3vh auto;
+  font-size: 2vh;
+  border-top: 0.2vh dotted grey;
+  padding: 3vh 2vh;
+}
+
+.Section1 {
+  display: flex;
+  gap: 5vh;
+  width: 100%;
+}
+
+.Section2 {
+  display: flex;
+  gap: 5vh;
+  width: 100%;
+  padding: 3vh 0;
+}
+
+/* ===================== MEDIA QUERIES ================= */
+@media (min-width: 1000px) {
+  .Container {
+    flex-direction: row;
+    width: 70vw;
+    padding: 3vh 0;
+  }
+  
+  .Section1 {
+    width: 50%;
+  }
+  
+  .Section2 {
+    justify-content: flex-end;
+    gap: 5vh;
+    width: 50%;
+  }
+}

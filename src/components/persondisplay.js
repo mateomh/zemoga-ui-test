@@ -1,6 +1,3 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/self-closing-comp */
-/* eslint-disable arrow-body-style */
 import PropTypes from 'prop-types';
 import PersonDispStyles from '../assets/stylesheets/persondisplay.module.css';
 import PersonInformation from './personinformation';
