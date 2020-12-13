@@ -3,7 +3,6 @@
 /* eslint-disable arrow-body-style */
 import PropTypes from 'prop-types';
 import PersonDispStyles from '../assets/stylesheets/persondisplay.module.css';
-import NavBar from './navbar';
 import PersonInformation from './personinformation';
 import VoteBar from './votebar';
 
@@ -25,9 +24,8 @@ const PersonDisplay = props => {
 
   return (
     <div className={style}>
-      <NavBar />
       <PersonInformation name={personName} section={section} />
-      <VoteBar goodVotes={3} badVotes={2} />
+      <VoteBar goodVotes={1} badVotes={2} />
     </div>
   );
 };

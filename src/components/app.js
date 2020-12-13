@@ -1,9 +1,14 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable arrow-body-style */
+import Header from './header';
 import PersonDisplay from './persondisplay';
 
 const App = () => {
   return (
-    <PersonDisplay person="kanye" />
+    <>
+      <Header />
+      <PersonDisplay person="kanye" />
+    </>
   );
 };
 
