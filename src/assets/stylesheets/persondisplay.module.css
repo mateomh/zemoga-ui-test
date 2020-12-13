@@ -10,7 +10,7 @@
 
 .Kanye {
   background-image:
-    linear-gradient( rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7) 90% 95%),
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7) 90% 95%),
     url('../images/kanye1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,8 +19,8 @@
 }
 
 .Mark {
-  background-image: 
-    linear-gradient( rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7) 90% 95%),
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7) 90% 95%),
     url('../images/mark1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,8 +29,8 @@
 }
 
 .Cristina {
-  background-image: 
-    linear-gradient( rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7) 90% 95%),
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7) 90% 95%),
     url('../images/cristina1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,8 +39,8 @@
 }
 
 .Malala {
-  background-image: 
-    linear-gradient( rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7) 90% 95%),
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7) 90% 95%),
     url('../images/malala1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,12 +50,11 @@
 
 /* ======================== MEDIA QUERY ==================== */
 @media (min-width: 1025px) {
-  .Container{
+  .Container {
     margin: 0;
   }
 
   .Malala {
     background-position-x: 10%;
   }
-  
 }

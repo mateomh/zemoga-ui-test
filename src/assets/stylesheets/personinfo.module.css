@@ -25,7 +25,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   padding: 1vh;
   height: 5vh;
   width: 5vh;
@@ -38,7 +37,7 @@
 }
 
 .Good {
-  background-color: var(--color1); 
+  background-color: var(--color1);
 }
 
 .Bad {
@@ -65,7 +64,7 @@
   border: 3px solid white;
 }
 
-/* =============== MEDIA QUERIES ==================== */ 
+/* =============== MEDIA QUERIES ==================== */
 
 @media (min-width: 1024px) {
   .Text {

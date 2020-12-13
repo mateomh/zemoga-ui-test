@@ -2,7 +2,7 @@
 
 .Container {
   position: relative;
-  background-image: 
+  background-image:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.1) 40% 100%),
     url('../images/pope1.jpg');
   height: 70vh;
@@ -17,7 +17,7 @@
   position: relative;
   height: 40vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(255, 255, 255, 0.7));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
   color: white;
   padding: 2vh;
 }
