@@ -2,7 +2,6 @@
 
 .Container {
   position: relative;
-  background-color: palevioletred;
   padding: 30vh 5vh 3vh 3vh;
   margin-top: 5vh;
 }
@@ -45,9 +44,6 @@
   background-size: 180% 100%;
   background-position-x: 20%;
   background-position-y: 50%;
-  /* background-size: contain 100%;
-  background-position-x: 70%;
-  background-position-y: 50%; */
 }
 
 /* ======================== MEDIA QUERY ==================== */

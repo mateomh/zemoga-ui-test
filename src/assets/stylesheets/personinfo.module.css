@@ -33,6 +33,7 @@
   height: 5vh;
   width: 5vh;
   color: white;
+  cursor: pointer;
 }
 
 .VoteItem > * {
@@ -46,7 +47,6 @@
 .Bad {
   background-color: var(--color2);
   transform: scaleX(-1);
-
 }
 
 .Button {
@@ -74,11 +74,6 @@
   .Text {
     margin-top: 2%;
   }
-  /* .Voting {
-    display: flex;
-    justify-content: space-between;
-    width: 30%;
-  } */
 
   .Button {
     width: 50%;

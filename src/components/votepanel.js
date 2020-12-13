@@ -5,9 +5,11 @@
 import { faThumbsDown, faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import PersonInfoStyles from '../assets/stylesheets/personinfo.module.css';
 
-const VotePanel = () => {
+const VotePanel = props => {
+  const { good, bad } = props;
   const defaultVote = {
     person: '',
     voted: false,
@@ -15,7 +17,6 @@ const VotePanel = () => {
   };
 
   const [vote, setVote] = useState(defaultVote);
-  console.log(vote);
 
   const select = event => {
     const voteSelect = event.target;
@@ -35,6 +36,11 @@ const VotePanel = () => {
       setVote({ ...defaultVote });
     } else if (vote.vote !== null) {
       setVote({ ...vote, voted: true });
+      if (vote.vote === 'Good') {
+        good();
+      } else {
+        bad();
+      }
     }
   };
 
@@ -71,6 +77,11 @@ const VotePanel = () => {
       </button>
     </div>
   );
+};
+
+VotePanel.propTypes = {
+  good: PropTypes.func.isRequired,
+  bad: PropTypes.func.isRequired,
 };
 
 export default VotePanel;
