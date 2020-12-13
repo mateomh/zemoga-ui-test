@@ -17,8 +17,6 @@ const PersonInformation = props => {
 
   const [votes, setVotes] = useState(totalVotes);
 
-  console.log(votes);
-
   const goodVotes = () => {
     setVotes({ ...votes, goodVotes: votes.goodVotes + 1 });
   };
