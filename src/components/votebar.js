@@ -11,7 +11,7 @@ const VoteBar = props => {
 
   const goodStyle = {
     width: `${good}%`,
-    backgroundColor: '#00C19F',
+    backgroundColor: '#00c19f',
     height: '100%',
     textAlign: 'left',
     display: 'flex',
