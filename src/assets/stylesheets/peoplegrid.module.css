@@ -1,0 +1,27 @@
+@import url("./general.css");
+
+.Container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100vw;
+  margin-top: 5vh;
+}
+
+.Title {
+  font-size: 5vh;
+  font-weight: 200;
+}
+
+/* ================= MEDIA QUERIES =================== */
+@media (min-width: 1000px) {
+  .Container {
+    grid-template-columns: 1fr 1fr;
+    width: 70vw;
+    margin: 5vh auto;
+    gap: 5vh;
+  }
+
+  .Title {
+    grid-column: 1 / 3;
+  }
+}

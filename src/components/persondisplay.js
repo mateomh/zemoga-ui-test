@@ -18,6 +18,21 @@ const PersonDisplay = props => {
       personName = 'Kanye West';
       section = 'Entertainment';
       break;
+    case 'mark':
+      style = style.concat(` ${PersonDispStyles.Mark}`);
+      personName = 'Mark Zuckerberg';
+      section = 'Business';
+      break;
+    case 'cristina':
+      style = style.concat(` ${PersonDispStyles.Cristina}`);
+      personName = 'Cristina Fernandez de Kirchner';
+      section = 'Politics';
+      break;
+    case 'malala':
+      style = style.concat(` ${PersonDispStyles.Malala}`);
+      personName = 'Malala Yousafzai';
+      section = 'Entertainment';
+      break;
     default:
       break;
   }

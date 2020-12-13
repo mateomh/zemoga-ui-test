@@ -61,7 +61,8 @@
 @media (min-width: 1000px) {
   .Info {
     position: absolute;
-    background-image: rgba(0, 0, 0, 0.5);
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.5);
     left: 10%;
     top: 20vh;
     width: 30vw;
