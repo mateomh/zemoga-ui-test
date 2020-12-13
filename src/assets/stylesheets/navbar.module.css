@@ -21,7 +21,7 @@
 
 /* ============== MEDIA QUERIES ============== */
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .NavBar {
     justify-content: space-around;
     align-items: center;
