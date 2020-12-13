@@ -1,0 +1,60 @@
+@import url("./general.css");
+
+.Container {
+  position: relative;
+  padding: 30vh 5vh 3vh 3vh;
+  margin-top: 5vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+.Kanye {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7) 90% 95%),
+    url('../images/kanye1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 70%;
+  background-position-y: 50%;
+}
+
+.Mark {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7) 90% 95%),
+    url('../images/mark1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 30%;
+  background-position-y: 20%;
+}
+
+.Cristina {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7) 90% 95%),
+    url('../images/cristina1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 70%;
+  background-position-y: 50%;
+}
+
+.Malala {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7) 90% 95%),
+    url('../images/malala1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 50%;
+}
+
+/* ======================== MEDIA QUERY ==================== */
+@media (min-width: 1025px) {
+  .Container {
+    margin: 0;
+  }
+
+  .Malala {
+    background-position-x: 10%;
+  }
+}

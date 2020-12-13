@@ -1,8 +1,13 @@
-/* eslint-disable arrow-body-style */
-const App = () => {
-  return (
-    <h1>Hello world</h1>
-  );
-};
+import Footer from './footer';
+import Header from './header';
+import PeopleGrid from './peoplegrid';
+
+const App = () => (
+  <>
+    <Header />
+    <PeopleGrid />
+    <Footer />
+  </>
+);
 
 export default App;
