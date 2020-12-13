@@ -58,7 +58,7 @@
 }
 
 /* =================== MEDIA QUERIES ================== */
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
   .Info {
     position: absolute;
     background-image: none;
@@ -67,5 +67,9 @@
     top: 20vh;
     width: 30vw;
     z-index: 100;
+  }
+
+  .Text {
+    margin-top: 3vh;
   }
 }

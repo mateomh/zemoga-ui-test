@@ -21,14 +21,14 @@
 
 /* ============== MEDIA QUERIES ============== */
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
   .NavBar {
     justify-content: space-around;
     align-items: center;
   }
 
   .NavLogo {
-    width: 60%;
+    width: 50%;
   }
 
   .NavItem {

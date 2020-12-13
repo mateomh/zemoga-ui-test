@@ -11,7 +11,7 @@
     linear-gradient( rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7) 90% 95%),
     url('../images/kanye1.jpg');
   background-repeat: no-repeat;
-  background-size: contain 100%;
+  background-size: cover;
   background-position-x: 70%;
   background-position-y: 50%;
 }
@@ -21,7 +21,7 @@
     linear-gradient( rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7) 90% 95%),
     url('../images/mark1.jpg');
   background-repeat: no-repeat;
-  background-size: contain 100%;
+  background-size: cover;
   background-position-x: 30%;
   background-position-y: 20%;
 }
@@ -31,7 +31,7 @@
     linear-gradient( rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7) 90% 95%),
     url('../images/cristina1.jpg');
   background-repeat: no-repeat;
-  background-size: contain 100%;
+  background-size: cover;
   background-position-x: 70%;
   background-position-y: 50%;
 }
@@ -47,7 +47,7 @@
 }
 
 /* ======================== MEDIA QUERY ==================== */
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
   .Container{
     margin: 0;
   }

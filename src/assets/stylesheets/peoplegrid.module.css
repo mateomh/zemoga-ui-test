@@ -13,7 +13,7 @@
 }
 
 /* ================= MEDIA QUERIES =================== */
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .Container {
     grid-template-columns: 1fr 1fr;
     width: 70vw;

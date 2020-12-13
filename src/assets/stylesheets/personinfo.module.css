@@ -70,7 +70,7 @@
 
 /* =============== MEDIA QUERIES ==================== */ 
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .Text {
     margin-top: 2%;
   }

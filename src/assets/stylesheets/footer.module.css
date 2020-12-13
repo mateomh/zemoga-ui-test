@@ -26,7 +26,7 @@
 }
 
 /* ===================== MEDIA QUERIES ================= */
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .Container {
     flex-direction: row;
     width: 70vw;
